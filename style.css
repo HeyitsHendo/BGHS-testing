@@ -987,6 +987,7 @@ body{
 .why-choose .choose-left .list li {
 	color: #868686;
 	margin-bottom: 12px;
+	padding-left:2px;
 }
 .why-choose .choose-left .list li:last-child{
 	margin-bottom:0px;
@@ -1000,7 +1001,6 @@ body{
 	color:#fff;
 	font-size:14px;
 	border-radius:100%;
-	padding-left:2px;
 	margin-right:16px;
 }
 /* Start Faq CSS */
@@ -1010,7 +1010,6 @@ body{
 .why-choose .choose-right{
 	height:100%;
 	width:100%;
-	background-image:url('img/video-bg.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -1714,7 +1713,6 @@ body{
 	Start Clients CSS
 ==========================*/
 .clients{
-	background-image:url('img/cleaner-bg.jpeg');
 	background-size:cover;
 	background-position:center;
 	padding:100px 0px;
