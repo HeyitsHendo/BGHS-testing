@@ -1213,9 +1213,9 @@ body{
 	border-radius: 100%;
 	font-size: 20px;
 	text-align: center;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
+	-webkit-transition: all 15.0s ease;
+	-moz-transition: all 15.0s ease;
+	transition: all 15.0s ease;
 	box-shadow: 0px 0px 10px #0000001a;
 }
 .pf-details .image-slider .owl-carousel .owl-nav div:hover{
