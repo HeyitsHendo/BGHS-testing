@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="keywords" content="Site keywords here">
-		<meta name="description" content="">
+		<meta name="description" content="Blue Gum Home Services offers expert cleaning and pest control services in Newcastle. From carpet cleaning to water damage restoration, we have you covered.">
 		<meta name='copyright' content=''>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
@@ -13,7 +13,7 @@
         <title>Blue Gum Home Services - We're Here For You</title>
 		
 		<!-- Favicon -->
-        <link rel="icon" href="img/favicon.png">
+        <link rel="icon" href="img/favicon.avif">
 		
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -41,7 +41,62 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-		
+	
+		<!-- Homepage Schema -->
+		<script type="application/ld+json">
+			{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Blue Gum Home Services",
+			"description": "Blue Gum Home Services offers a variety of cleaning and pest control services in Newcastle, Australia.",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "10 Tulloch Avenue",
+				"addressLocality": "Maryland",
+				"addressRegion": "NSW",
+				"postalCode": "2287",
+				"addressCountry": "Australia"
+			},
+			"telephone": "+64-488-777-441",
+			"url": "https://www.bluegumhomeservices.com.au",
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "-32.886059775985494",
+				"longitude": "151.66355148465823"
+			},
+			"sameAs": [
+				"https://www.facebook.com/bluegumhomeservices"
+			],
+			"service": [
+				{
+				"@type": "Service",
+				"serviceType": "Carpet Cleaning"
+				},
+				{
+				"@type": "Service",
+				"serviceType": "Upholstery Cleaning"
+				},
+				{
+				"@type": "Service",
+				"serviceType": "End of Lease Cleaning"
+				},
+				{
+				"@type": "Service",
+				"serviceType": "End of Build Cleaning"
+				},
+				{
+				"@type": "Service",
+				"serviceType": "Pest Control"
+				},
+				{
+				"@type": "Service",
+				"serviceType": "Water Damage Restoration"
+				}
+			]
+			}
+			</script>
+	
+
     </head>
     <body>
 
@@ -88,7 +143,9 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="./index.html"><img src="./img/logo.png" alt="#"></a>
+									<a href="./index.html">
+										<img src="./img/logo.avif" alt="Blue Gum Home Services" width="350" height="75">
+									</a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -132,7 +189,7 @@
 		<section class="slider">
 			<div class="hero-slider">
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/newcastle.jpg')">
+				<div class="single-slider" style="background-image:url('img/newcastle.avif')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -150,7 +207,7 @@
 				</div>
 				<!-- End Single Slider -->
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/pest-control.jpg')">
+				<div class="single-slider" style="background-image:url('img/pest-control.avif')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -168,7 +225,7 @@
 				</div>
 				<!-- Start End Slider -->
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/end-of-lease.jpg')">
+				<div class="single-slider" style="background-image:url('img/end-of-lease.avif')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -387,7 +444,7 @@ He is also the best carpet cleaner in town! He takes care and does a great job. 
 		<!--/ End Pricing Table -->
 		
 		<!-- Start clients -->
-		<div class="clients overlay" style="background-image:url('img/cleaner-bg.jpeg')">
+		<div class="clients overlay" style="background-image:url('img/cleaner-bg.avif')">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-12">
@@ -409,26 +466,26 @@ He is also the best carpet cleaner in town! He takes care and does a great job. 
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-12">
-						<form class="form" action="#">
+						<form class="form" action="sendemail.php" method="post">
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-12">
 									<div class="form-group">
-										<input name="name" type="text" placeholder="Name">
+										<input name="name" id="name" type="text" placeholder="Name" required>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="email" type="email" placeholder="Email">
+										<input name="email" id="email" type="email" placeholder="Email" required>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="phone" type="text" placeholder="Phone">
+										<input name="phone" id="phone" type="text" placeholder="Phone" required>
 									</div>
 								</div>
 								<div class="col-lg-12 col-md-12 col-12">
 									<div class="form-group">
-										<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+										<textarea name="message" id="message" placeholder="Write Your Message Here....." required></textarea>
 									</div>
 								</div>
 							</div>
@@ -445,7 +502,7 @@ He is also the best carpet cleaner in town! He takes care and does a great job. 
 					</div>
 					<div class="col-lg-6 col-md-12 ">
 						<div class="appointment-image">
-							<img src="img/get-in-touch.png" alt="#">
+							<img src="img/get-in-touch.avif" alt="#">
 						</div>
 					</div>
 				</div>
